@@ -21,5 +21,7 @@ jobs:
       - name: Set up Super Linter
         uses: github/super-linter@v4
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           RUN_LOCAL: false
           LINTER_RULES_PATH: .github/linters
+
